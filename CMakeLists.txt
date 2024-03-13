@@ -14,11 +14,16 @@ add_executable(
 #        how-to-think-like-a-computer-scientist-cpp/recursion/infinite-recursion.cpp
 #        how-to-think-like-a-computer-scientist-cpp/fruitful-functions/incremental-development.cpp
 #        how-to-think-like-a-computer-scientist-cpp/fruitful-functions/overloading.cpp
-        how-to-think-like-a-computer-scientist-cpp/fruitful-functions/bool.cpp
-        how-to-think-like-a-computer-scientist-cpp/fruitful-functions/leap-of-faith.cpp
-        how-to-think-like-a-computer-scientist-cpp/iteration/multiple-assignment.cpp
-        how-to-think-like-a-computer-scientist-cpp/iteration/iteration.cpp
-        how-to-think-like-a-computer-scientist-cpp/iteration/encapsulation-and-generalization.cpp
-        how-to-think-like-a-computer-scientist-cpp/iteration/functions.cpp
-        how-to-think-like-a-computer-scientist-cpp/iteration/development-plan.cpp
+#        how-to-think-like-a-computer-scientist-cpp/fruitful-functions/bool.cpp
+#        how-to-think-like-a-computer-scientist-cpp/fruitful-functions/leap-of-faith.cpp
+#        how-to-think-like-a-computer-scientist-cpp/iteration/multiple-assignment.cpp
+#        how-to-think-like-a-computer-scientist-cpp/iteration/iteration.cpp
+#        how-to-think-like-a-computer-scientist-cpp/iteration/encapsulation-and-generalization.cpp
+#        how-to-think-like-a-computer-scientist-cpp/iteration/functions.cpp
+#        how-to-think-like-a-computer-scientist-cpp/iteration/development-plan.cpp
+#        how-to-think-like-a-computer-scientist-cpp/strings/apstring.cpp
+#        how-to-think-like-a-computer-scientist-cpp/structures/point.cpp
+        how-to-think-like-a-computer-scientist-cpp/structures/rectangle.cpp
+        how-to-think-like-a-computer-scientist-cpp/structures/function.cpp
+        how-to-think-like-a-computer-scientist-cpp/structures/algorithms.cpp
 )
