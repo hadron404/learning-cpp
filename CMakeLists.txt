@@ -23,7 +23,10 @@ add_executable(
 #        how-to-think-like-a-computer-scientist-cpp/iteration/development-plan.cpp
 #        how-to-think-like-a-computer-scientist-cpp/strings/apstring.cpp
 #        how-to-think-like-a-computer-scientist-cpp/structures/point.cpp
-        how-to-think-like-a-computer-scientist-cpp/structures/rectangle.cpp
-        how-to-think-like-a-computer-scientist-cpp/structures/function.cpp
-        how-to-think-like-a-computer-scientist-cpp/structures/algorithms.cpp
+#        how-to-think-like-a-computer-scientist-cpp/structures/rectangle.cpp
+#        how-to-think-like-a-computer-scientist-cpp/structures/function.cpp
+#        how-to-think-like-a-computer-scientist-cpp/structures/algorithms.cpp
+#        how-to-think-like-a-computer-scientist-cpp/vectors/vector.cpp
+        how-to-think-like-a-computer-scientist-cpp/vectors/random-numbers.cpp
+        how-to-think-like-a-computer-scientist-cpp/member-function/member-function.cpp
 )

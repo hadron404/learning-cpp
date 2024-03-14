@@ -51,6 +51,9 @@ Time addTime(Time &t1, Time &t2) {
  * Takes object as parameters and modifies some or all of them. Often returns void.
  */
 
+void printTime(const Time& time) {
+    cout << time.hour << ":" << time.minute << ":" << time.second << endl;
+}
 
 /*
  * fill-in-function:
