@@ -1,64 +1,124 @@
 == Chapter Review
 
-What are the modules of C++ programs called?
+=== What are the modules of C++ programs called?
 
+.Click to reveal the answer
+[%collapsible]
+====
+It makes definitions made in the `std` namespace available to a program.
+====
 
-What does the following pre-processor directive do?
+=== What does the following pre-processor directive do?
+
 [source,c++]
 ----
 #include <iostream>
 ----
+.Click to reveal the answer
+[%collapsible]
+====
+It causes the contents of the `iostream` file to be substituted for this directive before final compilation.
+====
 
+=== What does the following statement do?
 
-What does the following statement do?
 [source,c++]
 ----
 using namespace std;
 ----
 
+.Click to reveal the answer
+[%collapsible]
+====
+They are called functions.
+====
 
-What statement would use to print the phrase "Hello,world" and then start a new line?
+=== What statement would use to print the phrase "Hello,world" and then start a new line?
+
+.Click to reveal the answer
+[%collapsible]
+====
+`cout << "Hello,world" << endl;` or `cout << "Hello,world\n";`
+====
+
+=== What statement would you use to create an integer variable with the name `cheeses`?
+
+.Click to reveal the answer
+[%collapsible]
+====
+`int cheeses;`
+====
+
+=== What statement would you use to assign the value 32 to the variable `cheeses` ?
+.Click to reveal the answer
+[%collapsible]
+====
+`cheeses = 32;`
+====
 
 
-What statement would you use to create an integer variable with the name `cheeses`?
+=== What statement would you use to read a value from keyboard input into the variable `cheeses`?
+
+.Click to reveal the answer
+[%collapsible]
+====
+`cin >> chbeeses;`
+====
 
 
-What statement would you use to assign the value 32 to the variable `cheeses` ?
+=== What statement would you use to print "We have X varieties of cheese," where the current value of the `cheeses` variable replaces `x` ?
+.Click to reveal the answer
+[%collapsible]
+====
+`cout << "We have" << cheeses << "varieties of cheese" << endl;`
+====
 
 
-What statement would you use to read a value from keyboard input into the variable `cheeses`?
+=== What do the following function prototypes tell you about the functions?
 
-
-What statement would you use to print "We have X varieties of cheese," where the current value of the `cheeses` variable replaces `x` ?
-
-
-What do the following function prototypes tell you about the functions?
 [source,c++]
 ----
 int froop(double t);
 void rattle(int n);
 int prune(void);
 ----
+.Click to reveal the answer
+[%collapsible]
+====
+The function `froop()` expects to be called with one argument, which will be type `double`,and that the function will return a type `int` value.For instance, it could be used as follows: `int gval = froop(3.14159);`.
+
+The function `rattle()` has no return value and expects an `int` argument. For instance, it could be used as follows: `rattle(37);`.
+
+The function `prune()` returns an `int` and expects to be used without an argument. For instance,it could be used as follows:`int residue = prune();`.
+====
 
 
-When do you not have to use the keyword `return` when you define a function?
+=== When do you not have to use the keyword `return` when you define a function?
+.Click to reveal the answer
+[%collapsible]
+====
+You don't have to use `return` in a function when the function has the return type `void`.
+However, you can use it if you don't give a return value: `return;`.
+====
 
+=== Suppose your `main()` function has the following line:
 
-Suppose your `main()` function has the following line:
 [source,c++]
 ----
 cout << "Please enter your PIN:";
 ----
-And suppose the compiler complains that `cout` is an unknown identifier. What is the likely cause of this complaint, and what are three ways to fix the problem?
+
+And suppose the compiler complains that `cout` is an unknown identifier.
+What is the likely cause of this complaint, and what are three ways to fix the problem?
+
+
 
 
 == Programming Exercises
 
 Write a C++ program that displays your name and address(or if you value your privacy,a fictitious name and address).
 
-
 Write a C++ program that asks for a distance in furlongs and converts it to yards.(One furlong is 220 yards.)
-
 
 Write a C++ program that uses three user-defined functions (counting `main()` as one) and produces the following output:
 
@@ -69,34 +129,37 @@ Three blind mice
 See how they run
 See how they run
 ----
-One function, called two times, should produce the first two lines, and the remaining function, also called twice, should produce the remaining output.
 
+One function, called two times, should produce the first two lines, and the remaining function, also called twice, should produce the remaining output.
 
 Write a program that asks the user to enter his or her age.The program then should display the age in months: `Enter your age: 29`, Your age in months is 384.
 
-
 Write a program that has `main()` call a user-defines function that takes a Celsius temperature value as an argument and then returns the equivalent Fahrenheit value.The program should request the Celsius value as input from the user and display the result, as shown in the following code:
+
 [source,text]
 ----
 Please enter  a Celsius value:
 20
 20 degrees Celsius is 68 degrees Fahrenheit.
 ----
+
 For reference, here is the formula for making the conversion: `Fahrenheit = 1.8 X degrees Celsius + 32.0`
 
+Write a program that has `main()` call a user-defined function that takes a distance in light years as an argument and then returns the distance in astronomical units.
+The program should request the light year value as input from the user and display teh result,as shown in the following code:
 
-Write a program that has `main()` call a user-defined function that takes a distance in light years as an argument and then returns the distance in astronomical units. The program should request the light year value as input from the user and display teh result,as shown in the following code:
 [source,text]
 ----
 Enter the number of light years:
 4.2
 4.2 light years = 265608 astronomical units.
 ----
+
 An astronomical unit is the average distance from the earth to the sun(about 150_000_000 km or 93_000_000 miles), and a light year is the distance light travels in a year (about 10 trillion kilometers or 6 trillion miles).(The nearest star after the sun is about 4.2 light years away)Use type double(as in Listing 2.4) and this conversion factor:
 `1 light year = 63240 astronomical units.`
 
-
 Write a program that asks the user to enter an hour value and a minute value.The `main()` function should then pass these two values to a type `void` function that displays the two values in the format shown in the following sample run:
+
 [source,text]
 ----
 Enter the number of hours: 9
