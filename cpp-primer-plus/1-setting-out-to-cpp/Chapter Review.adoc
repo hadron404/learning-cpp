@@ -96,10 +96,10 @@ An astronomical unit is the average distance from the earth to the sun(about 150
 `1 light year = 63240 astronomical units.`
 
 
-Write a program that asks the user to enter an hour value and a minute value.The `main()` function should then pass these two values to a type `void` function that displays the two values in the fromat shown in the following sample run:
+Write a program that asks the user to enter an hour value and a minute value.The `main()` function should then pass these two values to a type `void` function that displays the two values in the format shown in the following sample run:
 [source,text]
 ----
-Enter the nubmer of hours: 9
+Enter the number of hours: 9
 Enter teh number of minutes: 28
 Time: 9:28
 ----
