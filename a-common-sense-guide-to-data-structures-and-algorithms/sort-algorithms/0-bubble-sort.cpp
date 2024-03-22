@@ -39,6 +39,7 @@ void sort(T &array) {
                 sorted = false;
             }
         }
+        printArray(array);
     }
 }
 
@@ -46,12 +47,8 @@ void sort(T &array) {
 int main() {
     // 数组的初始化
     int array[5] = {4, 2, 7, 1, 3};
-    int length = getArrayLength(array);
-    printArray(array);
     sort(array);
     // 打印数组
     std::cout << "final array: ";
-    for (int i = 0; i < length; ++i) {
-        std::cout << array[i];
-    }
+    printArray(array);
 }

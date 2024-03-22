@@ -32,7 +32,7 @@ add_executable(
 #        how-to-think-like-a-computer-scientist-cpp/member-function/constructors.cpp
 #        how-to-think-like-a-computer-scientist-cpp/member-function/header-files.h
 #        how-to-think-like-a-computer-scientist-cpp/vectors-of-objects/Card.cpp
-        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/0-bubble-sort.cpp
+#        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/0-bubble-sort.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/1-selection-sort.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/data-structures/0-array.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/data-structures/1-set.cpp
@@ -65,5 +65,5 @@ add_executable(
 #        a-common-sense-guide-to-data-structures-and-algorithms/practical-examples/13-shortest-path-problem.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/practical-examples/4-quadratic-problem.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/13-dijkstra's-alogrithm.cpp
-#        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/cocktail-shaker-sort.cpp
+        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/cocktail-shaker-sort.cpp
 )
