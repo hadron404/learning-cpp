@@ -51,8 +51,10 @@ add_executable(
 #        a-common-sense-guide-to-data-structures-and-algorithms/practical-examples/9-count-down.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/practical-examples/9-factorial.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/practical-examples/9-traversing-through-a-filesystem.cpp
-#        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/10-quick-sort.cpp
-#        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/10-quick-select.cpp
+        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/10-quick-sort.cpp
+        a-common-sense-guide-to-data-structures-and-algorithms/tools/printer.h
+        a-common-sense-guide-to-data-structures-and-algorithms/tools/printer.cpp
+        #        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/10-quick-select.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/data-structures/11-linked-list.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/data-structures/11-doubly-linked-list.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/data-structures/12-binary-tree.cpp
@@ -65,5 +67,5 @@ add_executable(
 #        a-common-sense-guide-to-data-structures-and-algorithms/practical-examples/13-shortest-path-problem.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/practical-examples/4-quadratic-problem.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/13-dijkstra's-alogrithm.cpp
-        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/cocktail-shaker-sort.cpp
+#        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/cocktail-shaker-sort.cpp
 )
