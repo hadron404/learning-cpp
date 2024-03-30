@@ -2,49 +2,97 @@
 #include "../tools/printer.h"
 
 /*
+ * https://www.geeksforgeeks.org/cpp-program-for-quicksort/
+ */
+// int partition(int arr[], int start, int end) {
+//     using namespace std;
+//     int pivot = arr[start];
+//
+//     int count = 0;
+//     for (int i = start + 1; i <= end; i++) {
+//         if (arr[i] <= pivot)
+//             count++;
+//     }
+//
+//     // Giving pivot element its correct position
+//     int pivotIndex = start + count;
+//     swap(arr[pivotIndex], arr[start]);
+//
+//     // Sorting left and right parts of the pivot element
+//     int i = start, j = end;
+//
+//     while (i < pivotIndex && j > pivotIndex) {
+//         while (arr[i] <= pivot) {
+//             i++;
+//         }
+//
+//         while (arr[j] > pivot) {
+//             j--;
+//         }
+//
+//         if (i < pivotIndex && j > pivotIndex) {
+//             swap(arr[i++], arr[j--]);
+//         }
+//     }
+//
+//     return pivotIndex;
+// }
+//
+// void sort(int arr[], int start, int end) {
+//     // base case
+//     if (start >= end)
+//         return;
+//
+//     // partitioning the array
+//     int p = partition(arr, start, end);
+//
+//     // Sorting the left part
+//     sort(arr, start, p - 1);
+//
+//     // Sorting the right part
+//     sort(arr, p + 1, end);
+// }
+
+/*
  * For consistency's sake,we'll always select the right-most value to be our pivot(althought we can
  * technically choose other values).
- *
  */
-int partition(int array[], int leftPointer, int rightPointer) {
-    using namespace std;
-    int pivotPointer = rightPointer + 1;
-    int pivot = array[pivotPointer];
-    while (leftPointer < rightPointer) {
-        if (array[leftPointer] < pivot) {
-            leftPointer += 1;
-            continue;
+int partition2(int array[], int start, int end) {
+    int pivotPosition = end;
+    int pivot = array[end];
+    end -= 1;
+    while (true) {
+        while (array[start] < pivot) {
+            start += 1;
         }
-        if (array[rightPointer] > pivot) {
-            rightPointer -= 1;
-            continue;
+        while (array[end] > pivot) {
+            end -= 1;
         }
-        if (array[leftPointer] > pivot && array[rightPointer] < pivot) {
-            swap(array[leftPointer], array[rightPointer]);
+        // 书上的算法，不加这段，在有重复元素的列表，算法会死循环。
+        if (array[start] == array[end]) {
+            start += 1;
         }
+        if (start > end) {
+            break;
+        }
+        std::swap(array[start], array[end]);
     }
-    if ((leftPointer == rightPointer || leftPointer > rightPointer) && array[leftPointer] > array[pivotPointer]) {
-        swap(array[leftPointer], array[pivotPointer]);
-    }
-    return leftPointer;
+    std::swap(array[start], array[pivotPosition]);
+    return start;
 }
 
-
-void sort(int array[], int leftPointer, int rightPointer, int size) {
-    if (rightPointer - leftPointer <= 1) // base case
+void sort(int array[], int start, int end) {
+    if (end - start <= 0)
         return;
-    int pivotPosition = partition(array, leftPointer, rightPointer - 2);
-    printArray(array, rightPointer);
-    // 选定 pivot ，将数组按pivot左右两个分区，左分区（0,pivot）,右分区（pivot,size-1）
-    // sort(array, leftPointer, pivotPosition + 1,size); // pivot 左边数组进行快排
-    sort(array, pivotPosition, rightPointer, size); // pivot 右边数组进行快排
+    int pivotPosition = partition2(array, start, end);
+    sort(array, start, pivotPosition - 1);
+    sort(array, pivotPosition + 1, end);
 }
-
 int main() {
-    int size = 15;
-    int array[size] = {13, 51, 68, 4, 3, 6, 5, 65, 70, 89, 66, 69, 2, 1, 7};
-    // int size = 9;
-    // int array[size] = {7, 65, 70, 89, 66, 69, 51, 13, 68};
-    sort(array, 0, size, size);
+    int size = 20;
+    int array[size] = {7, 8, 2, 5, 3, 1, 6, 9, 4, 5, 2, 8, 9, 5, 6, 7, 1, 59, 56, 5};
+    // int size = 6;
+    // int array[size] = {0,5,2,1,6,3};
+    sort(array, 0, size - 1);
     printArray(array, size);
 }
