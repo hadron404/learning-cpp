@@ -37,7 +37,7 @@ add_executable(
 #        a-common-sense-guide-to-data-structures-and-algorithms/data-structures/0-array.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/data-structures/1-set.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/search-algorithms/0-linear-search.cpp
-#        a-common-sense-guide-to-data-structures-and-algorithms/search-algorithms/1-binary-search.cpp
+        a-common-sense-guide-to-data-structures-and-algorithms/search-algorithms/1-binary-search.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/2-insertion-sort.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/practical-examples/0-print-out-all-the-items-from-the-list.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/practical-examples/1-every-other.cpp
@@ -51,7 +51,7 @@ add_executable(
 #        a-common-sense-guide-to-data-structures-and-algorithms/practical-examples/9-count-down.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/practical-examples/9-factorial.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/practical-examples/9-traversing-through-a-filesystem.cpp
-        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/10-quick-sort.cpp
+#        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/10-quick-sort.cpp
         a-common-sense-guide-to-data-structures-and-algorithms/tools/printer.h
         a-common-sense-guide-to-data-structures-and-algorithms/tools/printer.cpp
         #        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/10-quick-select.cpp
