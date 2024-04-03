@@ -33,12 +33,12 @@ add_executable(
 #        how-to-think-like-a-computer-scientist-cpp/member-function/header-files.h
 #        how-to-think-like-a-computer-scientist-cpp/vectors-of-objects/Card.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/0-bubble-sort.cpp
-        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/1-selection-sort.cpp
+#        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/1-selection-sort.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/data-structures/0-array.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/data-structures/1-set.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/search-algorithms/0-linear-search.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/search-algorithms/1-binary-search.cpp
-#        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/2-insertion-sort.cpp
+        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/2-insertion-sort.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/practical-examples/0-print-out-all-the-items-from-the-list.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/practical-examples/1-every-other.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/practical-examples/3-intersection.cpp
