@@ -54,7 +54,13 @@ add_executable(
 #        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/10-quick-sort.cpp
         a-common-sense-guide-to-data-structures-and-algorithms/tools/printer.h
         a-common-sense-guide-to-data-structures-and-algorithms/tools/printer.cpp
-#        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/10-quick-select.cpp
+        cpp-program-design/chapter1/3.1.cpp
+        cpp-program-design/chapter1/3.2.cpp
+        cpp-program-design/chapter1/3.3.cpp
+        cpp-program-design/chapter1/4.1.cpp
+        cpp-program-design/chapter1/1.1.cpp
+        cpp-program-design/chapter1/1.2.cpp
+        #        a-common-sense-guide-to-data-structures-and-algorithms/sort-algorithms/10-quick-select.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/data-structures/11-linked-list.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/data-structures/11-doubly-linked-list.cpp
 #        a-common-sense-guide-to-data-structures-and-algorithms/data-structures/12-binary-tree.cpp
